@@ -1,0 +1,54 @@
+{
+    "design_concern": "Logging and Monitoring for Threat Detection",
+    "dmatrices": {
+      "Centralized Logging with Anomaly Detection": {
+        "Technical-Economic": {
+          "Responsiveness": {
+            "Responsiveness": "-",
+            "Recoverability": "1",
+            "Maintainability": "0"
+          },
+          "Recoverability": {
+            "Responsiveness": "1",
+            "Recoverability": "-",
+            "Maintainability": "1"
+          },
+          "Security": {
+            "Responsiveness": "1",
+            "Recoverability": "1",
+            "Maintainability": "1"
+          }
+        }
+      },
+      "Decentralized Logging with Manual Audit": {
+        "Technical-Economic": {
+          "Responsiveness": {
+            "Responsiveness": "-",
+            "Recoverability": "1",
+            "Maintainability": "-1"
+          },
+          "Recoverability": {
+            "Responsiveness": "1",
+            "Recoverability": "-",
+            "Maintainability": "-1"
+          },
+          "Security": {
+            "Responsiveness": "1",
+            "Recoverability": "1",
+            "Maintainability": "1"
+          }
+        }
+      }
+    },
+    "priorities": {
+        "Security":4,
+        "Responsiveness": 3,
+        "Recoverability": 2,
+        "Maintainability": 1
+    },
+    "sis_scores": {
+        "Centralized Logging with Anomaly Detection": 12,
+        "Decentralized Logging with Manual Audit": 9
+    }
+  }
+  

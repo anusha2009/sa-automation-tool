@@ -1,0 +1,92 @@
+[
+  {
+    "design_concern": "Logging and Monitoring for Threat Detection",
+    "options": [
+      {
+        "description": "Centralized Logging with Anomaly Detection",
+        "rationale": "Enables faster threat detection, better correlation across systems, and supports incident investigation.",
+        "supported_qas": ["Security", "Responsiveness", "Recoverability"],
+        "issues": ["Requires robust infrastructure", "Potential single point of failure"]
+      },
+      {
+        "description": "Decentralized Logging with Manual Audit",
+        "rationale": "Provides greater fault tolerance and independence of system components.",
+        "supported_qas": ["Maintainability", "Security"],
+        "issues": ["Delayed detection of incidents", "High manual effort"]
+      }
+    ],
+    "chosen_option": "Centralized Logging with Anomaly Detection"
+  },
+  {
+    "design_concern": "Data Retention Policy",
+    "options": [
+      {
+        "description": "Minimal Retention (14 Days)",
+        "rationale": "Supports privacy and complies with GDPR, while meeting exposure notification requirements.",
+        "supported_qas": ["Security", "Maintainability"],
+        "issues": ["Limits forensic analysis and long-term research"]
+      },
+      {
+        "description": "Extended Retention (90 Days)",
+        "rationale": "Allows for extended analysis, audit trails, and error tracking.",
+        "supported_qas": ["Recoverability", "Maintainability"],
+        "issues": ["Greater privacy risk", "Higher data storage costs"]
+      }
+    ],
+    "chosen_option": "Minimal Retention (14 Days)"
+  },
+  {
+    "design_concern": "Verification of Diagnosis Keys",
+    "options": [
+      {
+        "description": "Token-based Verification via Health Authority",
+        "rationale": "Ensures data validity and guards against malicious uploads by requiring a signed token.",
+        "supported_qas": ["Security", "Verifiability", "Usability"],
+        "issues": ["Requires integration with healthcare systems"]
+      },
+      {
+        "description": "Rate-limited User Input",
+        "rationale": "Reduces dependency on external systems and is faster to implement.",
+        "supported_qas": ["Usability", "Availability"],
+        "issues": ["Greater risk of fake or invalid data uploads"]
+      }
+    ],
+    "chosen_option": "Token-based Verification via Health Authority"
+  },
+  {
+    "design_concern": "Backend Scalability Strategy",
+    "options": [
+      {
+        "description": "Horizontal Auto-Scaling",
+        "rationale": "Adds capacity on demand, improving efficiency and response under varying load.",
+        "supported_qas": ["Availability", "Performance", "Scalability"],
+        "issues": ["Requires orchestration platform", "Potentially higher cost under load"]
+      },
+      {
+        "description": "Static Pre-Provisioning",
+        "rationale": "Reserves full capacity in advance, ensuring maximum readiness.",
+        "supported_qas": ["Availability"],
+        "issues": ["Resource underutilization", "High baseline cost"]
+      }
+    ],
+    "chosen_option": "Horizontal Auto-Scaling"
+  },
+  {
+    "design_concern": "Secure User Submission of Test Results",
+    "options": [
+      {
+        "description": "QR Code Scanning with Digital Signature",
+        "rationale": "Minimizes user errors and speeds up submission while ensuring data authenticity.",
+        "supported_qas": ["Security", "Usability", "Verifiability"],
+        "issues": ["Requires lab integration and QR infrastructure"]
+      },
+      {
+        "description": "Manual Code Entry with Phone Verification",
+        "rationale": "Enables submission for users without QR access and integrates human oversight.",
+        "supported_qas": ["Usability", "Security"],
+        "issues": ["Slower process", "Higher support overhead"]
+      }
+    ],
+    "chosen_option": "QR Code Scanning with Digital Signature"
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "qa": "Security",
+    "definition": "The architecture includes procedures for informing employees about security-relevant events and provides guidance for administrators to handle security threats.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Social",
+        "justification": "The document emphasizes the importance of raising awareness among all employees about security threats."
+      },
+      {
+        "dimension": "Technical",
+        "justification": "The architecture includes procedures for informing employees about security-relevant events and provides guidance for administrators to handle security threats, indicating a focus on technical security measures."
+      }
+    ]
+  },
+  {
+    "qa": "Availability",
+    "definition": "The Corona-Warn-App Server, Verification Server, and Portal Server are designed to provide data in a RESTful format, making it available through a transparent CDN.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Economic",
+        "justification": "The availability of data is crucial for the app's functionality, reducing the need for frequent requests and increasing efficiency."
+      },
+      {
+        "dimension": "Technical",
+        "justification": "The architecture ensures that data can be accessed in a standardized format, facilitating integration with other systems."
+      }
+    ]
+  },
+  {
+    "qa": "Recoverability",
+    "definition": "The system includes mechanisms for logging and monitoring events to detect suspicious behavior or trends in real-time.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Technical",
+        "justification": "The architecture focuses on event correlation and analytics, enabling the detection of security threats."
+      },
+      {
+        "dimension": "Economic",
+        "justification": "Reducing downtime due to security incidents is crucial for maintaining customer satisfaction and trust."
+      }
+    ]
+  },
+  {
+    "qa": "Performance",
+    "definition": "The architecture includes mechanisms for reducing the number of requests, allowing for efficient data retrieval and processing.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Economic",
+        "justification": "The system's performance optimization reduces the need for frequent requests, minimizing costs associated with data transfer."
+      }
+    ]
+  },
+  {
+    "qa": "Modifiability",
+    "definition": "The architecture isolates jurisdiction-specific logic in separate modules, allowing rapid updates when laws change.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Technical",
+        "justification": "The modular design facilitates localized changes."
+      },
+      {
+        "dimension": "Economic",
+        "justification": "Reducing engineering time needed for compliance updates is crucial for maintaining competitiveness."
+      }
+    ]
+  },
+  {
+    "qa": "Testability",
+    "definition": "The system includes mechanisms for security testing to identify vulnerabilities and ensure compliance with regulations.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Technical",
+        "justification": "Security testing assesses if system and configuration settings are compliant to the security requirements."
+      },
+      {
+        "dimension": "Economic",
+        "justification": "Regular security testing reduces the risk of data breaches, minimizing costs associated with potential losses."
+      }
+    ]
+  },
+  {
+    "qa": "Usability",
+    "definition": "The architecture provides various user-friendly tools and interfaces, including a user manual, tutorial, and hotlines, to support users in understanding and using the app.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Social",
+        "justification": "Ensures that all persons with disabilities can use the apps from public authorities."
+      },
+      {
+        "dimension": "Economic",
+        "justification": "Reduces support costs by providing clear and accessible information to users."
+      }
+    ]
+  },
+  {
+    "qa": "Verifiability",
+    "definition": "The architecture ensures that the diagnosis keys can be uploaded only after a verification process, which includes receiving positive tests results from a verification server or through a human-readable token.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Economic",
+        "justification": "Prevents misuse of the app and reduces potential losses due to incorrect information."
+      },
+      {
+        "dimension": "Social",
+        "justification": "Ensures that users receive accurate and reliable information about their exposure and infection status."
+      }
+    ]
+  },
+  {
+    "qa": "Maintainability",
+    "definition": "The architecture supports investigations and remediation of vulnerabilities, undiscovered threats, and architectural/processing vulnerabilities.",
+    "sustainability_dimensions": [
+      {
+        "dimension": "Economic",
+        "justification": "Identifies and addresses vulnerabilities before they can be exploited, reducing potential losses."
+      },
+      {
+        "dimension": "Social",
+        "justification": "Provides support for incident response processes and legal/disciplinary actions, ensuring compliance with regulations and industry standards."
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "design_concern": "Scalability",
+    "description": "The Corona-Warn-App needs to handle a large number of users and devices while maintaining scalability.",
+    "alternatives": [
+      {
+        "name": "Horizontal Scaling",
+        "description": "Adding more servers or nodes to handle increased traffic"
+      },
+      {
+        "name": "Vertical Scaling",
+        "description": "Increasing the power or resources of existing servers"
+      }
+    ],
+    "chosen_alternative": "Horizontal Scaling",
+    "rationale": "To ensure that the Corona-Warn-App can handle a large number of users and devices, we will implement horizontal scaling to add more servers or nodes as needed."
+  },
+  {
+    "design_concern": "Security",
+    "description": "The Corona-Warn-App needs to protect user data and prevent unauthorized access.",
+    "alternatives": [
+      {
+        "name": "Encryption",
+        "description": "Using encryption to protect user data"
+      },
+      {
+        "name": "Access Control",
+        "description": "Implementing access control mechanisms to restrict user access"
+      }
+    ],
+    "chosen_alternative": "Encryption",
+    "rationale": "To ensure that user data is protected and unauthorized access is prevented, we will implement encryption to secure user data."
+  },
+  {
+    "design_concern": "Data Retention",
+    "description": "The Corona-Warn-App needs to store user data for a certain period while complying with data retention regulations.",
+    "alternatives": [
+      {
+        "name": "Store Data Locally",
+        "description": "Storing user data on the device"
+      },
+      {
+        "name": "Store Data Remotely",
+        "description": "Storing user data on remote servers"
+      }
+    ],
+    "chosen_alternative": "Store Data Remotely",
+    "rationale": "To ensure that user data is stored for a certain period while complying with data retention regulations, we will implement remote storage of user data."
+  },
+  {
+    "design_concern": "Risk Management",
+    "description": "The Corona-Warn-App needs to identify and assess risks associated with user data and prevent unauthorized access.",
+    "alternatives": [
+      {
+        "name": "Implement Risk Assessment",
+        "description": "Regularly assessing risk to user data"
+      },
+      {
+        "name": "Implement Access Control",
+        "description": "Restricting user access to sensitive data"
+      }
+    ],
+    "chosen_alternative": "Implement Risk Assessment",
+    "rationale": "To ensure that risks associated with user data are identified and assessed, we will implement regular risk assessments."
+  },
+  {
+    "design_concern": "Logging and Monitoring",
+    "description": "The Corona-Warn-App needs to detect suspicious activity and prevent unauthorized access.",
+    "alternatives": [
+      {
+        "name": "Implement Logging",
+        "description": "Recording user activity for auditing purposes"
+      },
+      {
+        "name": "Implement Monitoring",
+        "description": "Monitoring user activity in real-time"
+      }
+    ],
+    "chosen_alternative": "Implement Logging",
+    "rationale": "To ensure that suspicious activity is detected and unauthorized access is prevented, we will implement logging to record user activity."
+  }
+]
